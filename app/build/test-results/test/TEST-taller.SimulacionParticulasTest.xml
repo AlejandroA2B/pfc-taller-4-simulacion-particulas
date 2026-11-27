@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="taller.SimulacionParticulasTest" tests="111" skipped="0" failures="0" errors="0" timestamp="2026-11-27T00:42:25" hostname="LAPTOP-RHUNQJLR" time="1.783">
+  <properties/>
+  <testcase name="pasoSecuencial: la posición avanza velocidad por dt" classname="taller.SimulacionParticulasTest" time="0.041"/>
+  <testcase name="pasoSecuencial: con dt cero nada se mueve" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="pasoSecuencial: la velocidad y la masa no cambian" classname="taller.SimulacionParticulasTest" time="0.004"/>
+  <testcase name="pasoSecuencial: sobre el sistema vacío no hay nada que mover" classname="taller.SimulacionParticulasTest" time="0.008"/>
+  <testcase name="pasoSegmento: solo calcula el tramo pedido" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="pasoSegmento: el tramo vacío da un sistema vacío" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="pasoParalelo: da lo mismo que el secuencial en un caso simple" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="pasoParalelo: coincide con el secuencial para varios umbrales" classname="taller.SimulacionParticulasTest" time="0.051"/>
+  <testcase name="pasoParalelo: conserva el orden y el tamaño del sistema" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="pasoParalelo: con umbral cero no se queda sin fondo" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="pasoSecuencial: mueve cada partícula según su propia velocidad" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="pasoSecuencial: con dt negativo retrocede" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="pasoSecuencial: no modifica el arreglo original" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="pasoSecuencial: es lineal en dt (dos pasos de dt = un paso de 2dt)" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="pasoSecuencial: conserva el orden de las partículas" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="pasoSegmento: tramo al inicio" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="pasoSegmento: tramo al final" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="pasoSegmento: tramo completo coincide con pasoSecuencial" classname="taller.SimulacionParticulasTest" time="0.004"/>
+  <testcase name="pasoSegmento: tramos contiguos concatenados = sistema completo" classname="taller.SimulacionParticulasTest" time="0.004"/>
+  <testcase name="pasoSegmento: desde &gt; hasta devuelve vacío" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="pasoSegmento: devuelve exclusivamente las partículas del tramo indicado" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="pasoParalelo: umbral mayor que n no reparte y coincide con secuencial" classname="taller.SimulacionParticulasTest" time="0.004"/>
+  <testcase name="pasoParalelo: calcula correctamente dos segmentos diferentes" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="pasoParalelo: no modifica el sistema original" classname="taller.SimulacionParticulasTest" time="0.007"/>
+  <testcase name="pasoParalelo: dt cero deja el sistema igual" classname="taller.SimulacionParticulasTest" time="0.005"/>
+  <testcase name="pasoParalelo: sistema vacío da vacío para cualquier umbral" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="pasoParalelo: conserva las propiedades de cada partícula" classname="taller.SimulacionParticulasTest" time="0.003"/>
+  <testcase name="energiaSecuencial: media masa por velocidad al cuadrado" classname="taller.SimulacionParticulasTest" time="0.011"/>
+  <testcase name="energiaSecuencial: el sistema vacío no tiene energía" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="energiaSecuencial: una partícula quieta no aporta energía" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="masaTotal: suma las masas" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="masaTotal: el sistema vacío no tiene masa" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="centroDeMasaSecuencial: el punto medio de dos masas iguales" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="centroDeMasaSecuencial: sin masa el centro es el origen" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="centroDeMasaSecuencial: la masa mayor arrastra el centro" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="energiaSecuencial: escala con la masa" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="energiaSecuencial: escala con el cuadrado de la velocidad" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="energiaSecuencial: no depende de la posición" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="energiaSecuencial: es aditiva al concatenar sistemas" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="energiaSecuencial: solo velocidades perpendiculares se suman como escalares" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="energiaSecuencial: nunca es negativa" classname="taller.SimulacionParticulasTest" time="0.003"/>
+  <testcase name="masaTotal: es aditiva al concatenar" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="masaTotal: masa cero si todas son cero" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="masaTotal: una partícula devuelve su masa" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="masaTotal: no depende del orden" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="masaTotal: escalar todas las masas escala el total" classname="taller.SimulacionParticulasTest" time="0.004"/>
+  <testcase name="masaTotal: es positiva si alguna masa es positiva" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="centroDeMasaSecuencial: una sola partícula está en su posición" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="centroDeMasaSecuencial: calcula el centro con posiciones negativas" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="centroDeMasaSecuencial: el centro conserva las coordenadas cuando todas las posiciones son iguales" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="centroDeMasaSecuencial: es combinación convexa (dentro del bounding box)" classname="taller.SimulacionParticulasTest" time="0.019"/>
+  <testcase name="centroDeMasaSecuencial: no cambia al reordenar" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="centroDeMasaSecuencial: trasladar todo traslada el centro" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="energiaParalela: coincide con la secuencial en el ejemplo" classname="taller.SimulacionParticulasTest" time="0.007"/>
+  <testcase name="energiaParalela: coincide con la secuencial para varios umbrales" classname="taller.SimulacionParticulasTest" time="0.011"/>
+  <testcase name="energiaParalela: sobre el sistema vacío da cero" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="centroDeMasaParalelo: coincide con el secuencial en el ejemplo" classname="taller.SimulacionParticulasTest" time="0.004"/>
+  <testcase name="centroDeMasaParalelo: coincide con el secuencial para varios umbrales" classname="taller.SimulacionParticulasTest" time="0.009"/>
+  <testcase name="centroDeMasaParalelo: promediar promedios daría otra cosa" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="centroDeMasaParalelo: sin masa el centro es el origen" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="energiaParalela: umbral mayor que n coincide con secuencial" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="energiaParalela: calcula correctamente energías con masas y velocidades diferentes" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="energiaParalela: es aditiva al concatenar" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="energiaParalela: las componentes negativas de velocidad también aportan energía" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="energiaParalela: una partícula quieta da cero" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="energiaParalela: todas quietas da cero" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="centroDeMasaParalelo: umbral mayor que n coincide con secuencial" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="centroDeMasaParalelo: calcula el centro con tres masas y coordenadas diferentes" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="centroDeMasaParalelo: una sola partícula está en su posición" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="centroDeMasaParalelo: masas desiguales no se promedian como promedios" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="centroDeMasaParalelo: conserva el centro cuando todas las partículas están en una posición común" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="centroDeMasaParalelo: trasladar todo traslada el centro" classname="taller.SimulacionParticulasTest" time="0.004"/>
+  <testcase name="trabajo: una operación por partícula" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="profundidad: si el umbral cubre todo, no se parte" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="profundidad: una partición y el tramo que queda" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="profundidad: diez particiones y un elemento" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="tiempoEstimado: profundidad más trabajo entre procesadores" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="tiempoEstimado: con un procesador no hay ganancia" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="profundidad: nunca supera el trabajo" classname="taller.SimulacionParticulasTest" time="0.004"/>
+  <testcase name="trabajo: cero partículas, cero operaciones" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="trabajo: es lineal (n + m = trabajo(n) + trabajo(m))" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="trabajo: es estrictamente creciente" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="trabajo: calcula correctamente el trabajo para tamaños no potencia de dos" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="trabajo: mantiene el trabajo total al dividirlo en grupos desiguales" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="trabajo: es positivo para n &gt; 0" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="profundidad: n=1, cualquier umbral, es 1" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="profundidad: con umbral 1, es ⌈log2(n)⌉ + 1" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="profundidad: monótona no decreciente en n (umbral fijo)" classname="taller.SimulacionParticulasTest" time="0.002"/>
+  <testcase name="profundidad: maneja correctamente una división con tamaño impar" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="profundidad: umbral 0 se comporta como umbral 1 en el límite" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="tiempoEstimado: la diferencia entre procesadores corresponde al trabajo ahorrado" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="tiempoEstimado: creciente en n (p, umbral fijos)" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="tiempoEstimado: no creciente en p (n, umbral fijos)" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="tiempoEstimado: no creciente en el umbral (n, p fijos)" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="tiempoEstimado: siempre ≥ profundidad" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="aceleracion: cuatro veces más rápido da 4.0" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="aceleracion: el mismo tiempo da 1.0" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="umbralConveniente: sin candidatos devuelve el tamaño del sistema" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="umbralConveniente: devuelve uno de los candidatos" classname="taller.SimulacionParticulasTest" time="0.996"/>
+  <testcase name="aceleracion: menor que 1 si el paralelo es más lento" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="aceleracion: es recíproca (S(a,b) = 1/S(b,a))" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="aceleracion: escala el numerador" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="aceleracion: escala el denominador inversamente" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="aceleracion: no cambia si ambos tiempos se multiplican por el mismo factor" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="aceleracion: monótona decreciente en tParalelo" classname="taller.SimulacionParticulasTest" time="0.0"/>
+  <testcase name="umbralConveniente: con un único candidato, lo devuelve" classname="taller.SimulacionParticulasTest" time="0.049"/>
+  <testcase name="umbralConveniente: no modifica las partículas del sistema" classname="taller.SimulacionParticulasTest" time="0.093"/>
+  <testcase name="umbralConveniente: conserva la lista de candidatos recibida" classname="taller.SimulacionParticulasTest" time="0.146"/>
+  <testcase name="umbralConveniente: funciona con un sistema vacío (lista vacía)" classname="taller.SimulacionParticulasTest" time="0.001"/>
+  <testcase name="umbralConveniente: candidatos repetidos siguen siendo válidos" classname="taller.SimulacionParticulasTest" time="0.075"/>
+  <testcase name="umbralConveniente: funciona con candidatos desordenados" classname="taller.SimulacionParticulasTest" time="0.072"/>
+  <system-out><![CDATA[Unable to create a system terminal
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
